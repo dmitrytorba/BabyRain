@@ -445,7 +445,19 @@
 		8FCDBE23168BB49F00A391AF = {
 			isa = PBXGroup;
 			children = (
-				8FCDBE44168BB49F00A391AF /* BabyTouch */,
+        3AF7C4A016B77DF1001F04C9 /* popupLayer.h */,
+				3AF7C4A116B77DF1001F04C9 /* popupLayer.m */,
+				8F5B9A6B16AA87640063C616 /* StartMenuLayer.h */,
+				8F5B9A6C16AA87640063C616 /* StartMenuLayer.m */,
+				8FCDBFBC168BB4A100A391AF /* AppDelegate.h */,
+				8FCDBFBD168BB4A100A391AF /* AppDelegate.m */,
+				8F9969BA169BBED800261222 /* MenuLayer.h */,
+				8F9969BC169BBF9400261222 /* MenuLayer.m */,
+				8FCDBFBF168BB4A100A391AF /* GameLayer.h */,
+				8FCDBFC0168BB4A100A391AF /* GameLayer.m */,
+				8FCDBE45168BB49F00A391AF /* Resources */,
+				8FCDBE5F168BB49F00A391AF /* libs */,
+				8FCDBFB8168BB4A100A391AF /* Supporting Files */,
 				8FCDBE31168BB49F00A391AF /* Frameworks */,
 				8FCDBE2F168BB49F00A391AF /* Products */,
 			);
@@ -473,26 +485,6 @@
 				8FCDBE42168BB49F00A391AF /* GameKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8FCDBE44168BB49F00A391AF /* BabyTouch */ = {
-			isa = PBXGroup;
-			children = (
-				3AF7C4A016B77DF1001F04C9 /* popupLayer.h */,
-				3AF7C4A116B77DF1001F04C9 /* popupLayer.m */,
-				8F5B9A6B16AA87640063C616 /* StartMenuLayer.h */,
-				8F5B9A6C16AA87640063C616 /* StartMenuLayer.m */,
-				8FCDBFBC168BB4A100A391AF /* AppDelegate.h */,
-				8FCDBFBD168BB4A100A391AF /* AppDelegate.m */,
-				8F9969BA169BBED800261222 /* MenuLayer.h */,
-				8F9969BC169BBF9400261222 /* MenuLayer.m */,
-				8FCDBFBF168BB4A100A391AF /* GameLayer.h */,
-				8FCDBFC0168BB4A100A391AF /* GameLayer.m */,
-				8FCDBE45168BB49F00A391AF /* Resources */,
-				8FCDBE5F168BB49F00A391AF /* libs */,
-				8FCDBFB8168BB4A100A391AF /* Supporting Files */,
-			);
-			path = BabyTouch;
 			sourceTree = "<group>";
 		};
 		8FCDBE45168BB49F00A391AF /* Resources */ = {
@@ -891,7 +883,7 @@
 			dependencies = (
 			);
 			name = BabyRain;
-			productName = BabyTouch;
+			productName = BabyRain;
 			productReference = 8FCDBE2E168BB49F00A391AF /* BabyRain.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -1134,9 +1126,9 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BabyTouch/Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"BabyTouch/libs/kazmath/include\"";
-				INFOPLIST_FILE = BabyTouch/Resources/Info.plist;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"libs/kazmath/include\"";
+				INFOPLIST_FILE = Resources/Info.plist;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
@@ -1152,9 +1144,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BabyTouch/Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"BabyTouch/libs/kazmath/include\"";
-				INFOPLIST_FILE = BabyTouch/Resources/Info.plist;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"libs/kazmath/include\"";
+				INFOPLIST_FILE = Resources/Info.plist;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
