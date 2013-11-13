@@ -157,7 +157,7 @@
 		8FB659A116A5401200B21198 /* leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leaf.png; path = Resources/leaf.png; sourceTree = "<group>"; };
 		8FBCFA8416A1E50A0026E5D0 /* cartoon-clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cartoon-clouds.png"; path = "Resources/cartoon-clouds.png"; sourceTree = "<group>"; };
 		8FBCFA8616A38B2B0026E5D0 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rain.mp3; path = Resources/rain.mp3; sourceTree = "<group>"; };
-		8FCDBE2E168BB49F00A391AF /* BabyTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCDBE2E168BB49F00A391AF /* BabyRain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyRain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCDBE32168BB49F00A391AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8FCDBE34168BB49F00A391AF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		8FCDBE36168BB49F00A391AF /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -454,7 +454,7 @@
 		8FCDBE2F168BB49F00A391AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FCDBE2E168BB49F00A391AF /* BabyTouch.app */,
+				8FCDBE2E168BB49F00A391AF /* BabyRain.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -878,9 +878,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8FCDBE2D168BB49F00A391AF /* BabyTouch */ = {
+		8FCDBE2D168BB49F00A391AF /* BabyRain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FCDBFC7168BB4A100A391AF /* Build configuration list for PBXNativeTarget "BabyTouch" */;
+			buildConfigurationList = 8FCDBFC7168BB4A100A391AF /* Build configuration list for PBXNativeTarget "BabyRain" */;
 			buildPhases = (
 				8FCDBE2A168BB49F00A391AF /* Sources */,
 				8FCDBE2B168BB49F00A391AF /* Frameworks */,
@@ -890,9 +890,9 @@
 			);
 			dependencies = (
 			);
-			name = BabyTouch;
+			name = BabyRain;
 			productName = BabyTouch;
-			productReference = 8FCDBE2E168BB49F00A391AF /* BabyTouch.app */;
+			productReference = 8FCDBE2E168BB49F00A391AF /* BabyRain.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -903,7 +903,7 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 			};
-			buildConfigurationList = 8FCDBE28168BB49F00A391AF /* Build configuration list for PBXProject "BabyTouch" */;
+			buildConfigurationList = 8FCDBE28168BB49F00A391AF /* Build configuration list for PBXProject "BabyRain" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -915,7 +915,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FCDBE2D168BB49F00A391AF /* BabyTouch */,
+				8FCDBE2D168BB49F00A391AF /* BabyRain */,
 			);
 		};
 /* End PBXProject section */
@@ -1141,7 +1141,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BabyRain;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1159,7 +1159,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BabyRain;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1168,7 +1168,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8FCDBE28168BB49F00A391AF /* Build configuration list for PBXProject "BabyTouch" */ = {
+		8FCDBE28168BB49F00A391AF /* Build configuration list for PBXProject "BabyRain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FCDBFC5168BB4A100A391AF /* Debug */,
@@ -1177,7 +1177,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FCDBFC7168BB4A100A391AF /* Build configuration list for PBXNativeTarget "BabyTouch" */ = {
+		8FCDBFC7168BB4A100A391AF /* Build configuration list for PBXNativeTarget "BabyRain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FCDBFC8168BB4A100A391AF /* Debug */,
