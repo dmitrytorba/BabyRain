@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		3AF7C4A216B77DF1001F04C9 /* popupLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7C4A116B77DF1001F04C9 /* popupLayer.m */; };
 		724C7A358EB2B9EB0A1D99A1 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 724C742C20BC6D739467B856 /* grass.png */; };
-		724C7AA72B6A98011C2DAEFD /* grass_sprite.plist in Resources */ = {isa = PBXBuildFile; fileRef = 724C799993B57D91E07D86AA /* grass_sprite.plist */; };
 		724C7B34081FC38850C32A01 /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 724C720082936FB752E47019 /* stars.png */; };
-		724C7E758C5CC9600D1E7644 /* grass_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 724C797BEFC50C3066247A52 /* grass_sprite.png */; };
 		8F5B9A6D16AA87640063C616 /* StartMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B9A6C16AA87640063C616 /* StartMenuLayer.m */; };
 		8F9969BD169BBF9400261222 /* MenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9969BC169BBF9400261222 /* MenuLayer.m */; };
 		8FB659A216A5401200B21198 /* leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB659A116A5401200B21198 /* leaf.png */; };
@@ -157,6 +155,8 @@
 		8FCDC03D168C2FF000A391AF /* SpookyPeas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC02E168C2FF000A391AF /* SpookyPeas.plist */; };
 		8FCDC03E168C2FF000A391AF /* TestPremultipliedAlpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC02F168C2FF000A391AF /* TestPremultipliedAlpha.plist */; };
 		8FCDC03F168C2FF000A391AF /* Upsidedown.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC030168C2FF000A391AF /* Upsidedown.plist */; };
+		8FD42CF61833D9E7002D3836 /* grass_sprite.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD42CF41833D9E7002D3836 /* grass_sprite.plist */; };
+		8FD42CF71833D9E7002D3836 /* grass_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD42CF51833D9E7002D3836 /* grass_sprite.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,14 +164,12 @@
 		3AF7C4A116B77DF1001F04C9 /* popupLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popupLayer.m; sourceTree = "<group>"; };
 		724C720082936FB752E47019 /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stars.png; path = Resources/stars.png; sourceTree = "<group>"; };
 		724C742C20BC6D739467B856 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grass.png; path = Resources/grass.png; sourceTree = "<group>"; };
-		724C797BEFC50C3066247A52 /* grass_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass_sprite.png; sourceTree = "<group>"; };
-		724C799993B57D91E07D86AA /* grass_sprite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = grass_sprite.plist; sourceTree = "<group>"; };
 		8F5B9A6B16AA87640063C616 /* StartMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartMenuLayer.h; sourceTree = "<group>"; };
 		8F5B9A6C16AA87640063C616 /* StartMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartMenuLayer.m; sourceTree = "<group>"; };
 		8F9969BA169BBED800261222 /* MenuLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuLayer.h; sourceTree = "<group>"; };
 		8F9969BC169BBF9400261222 /* MenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuLayer.m; sourceTree = "<group>"; };
 		8FB659A116A5401200B21198 /* leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leaf.png; path = Resources/leaf.png; sourceTree = "<group>"; };
-		8FBCFA8416A1E50A0026E5D0 /* cartoon-clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cartoon-clouds.png"; path = "BabyTouch/Resources/cartoon-clouds.png"; sourceTree = "<group>"; };
+		8FBCFA8416A1E50A0026E5D0 /* cartoon-clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cartoon-clouds.png"; path = "Resources/cartoon-clouds.png"; sourceTree = "<group>"; };
 		8FBCFA8616A38B2B0026E5D0 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rain.mp3; path = Resources/rain.mp3; sourceTree = "<group>"; };
 		8FCDBE2E168BB49F00A391AF /* BabyTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCDBE32168BB49F00A391AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -448,6 +446,8 @@
 		8FCDC02E168C2FF000A391AF /* SpookyPeas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SpookyPeas.plist; sourceTree = "<group>"; };
 		8FCDC02F168C2FF000A391AF /* TestPremultipliedAlpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestPremultipliedAlpha.plist; sourceTree = "<group>"; };
 		8FCDC030168C2FF000A391AF /* Upsidedown.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Upsidedown.plist; sourceTree = "<group>"; };
+		8FD42CF41833D9E7002D3836 /* grass_sprite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = grass_sprite.plist; path = Resources/grass_sprite.plist; sourceTree = "<group>"; };
+		8FD42CF51833D9E7002D3836 /* grass_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grass_sprite.png; path = Resources/grass_sprite.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -473,7 +473,6 @@
 		8FCDBE23168BB49F00A391AF = {
 			isa = PBXGroup;
 			children = (
-				8FBCFA8416A1E50A0026E5D0 /* cartoon-clouds.png */,
 				8FCDBE44168BB49F00A391AF /* BabyTouch */,
 				8FCDBE31168BB49F00A391AF /* Frameworks */,
 				8FCDBE2F168BB49F00A391AF /* Products */,
@@ -527,6 +526,9 @@
 		8FCDBE45168BB49F00A391AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8FD42CF41833D9E7002D3836 /* grass_sprite.plist */,
+				8FD42CF51833D9E7002D3836 /* grass_sprite.png */,
+				8FBCFA8416A1E50A0026E5D0 /* cartoon-clouds.png */,
 				8FB659A116A5401200B21198 /* leaf.png */,
 				8FBCFA8616A38B2B0026E5D0 /* rain.mp3 */,
 				8FCDC021168C2FF000A391AF /* Particles */,
@@ -544,8 +546,6 @@
 				8FCDBE5C168BB49F00A391AF /* Info.plist */,
 				8FCDBE5D168BB49F00A391AF /* iTunesArtwork */,
 				724C742C20BC6D739467B856 /* grass.png */,
-				724C797BEFC50C3066247A52 /* grass_sprite.png */,
-				724C799993B57D91E07D86AA /* grass_sprite.plist */,
 				724C720082936FB752E47019 /* stars.png */,
 			);
 			name = Resources;
@@ -982,6 +982,7 @@
 				8FCDBF9C168BB4A100A391AF /* ChangeLog in Resources */,
 				8FCDC031168C2FF000A391AF /* BoilingFoam.plist in Resources */,
 				8FCDC032168C2FF000A391AF /* BurstPipe.plist in Resources */,
+				8FD42CF71833D9E7002D3836 /* grass_sprite.png in Resources */,
 				8FCDC033168C2FF000A391AF /* Comet.plist in Resources */,
 				8FCDC034168C2FF000A391AF /* debian.plist in Resources */,
 				8FCDC035168C2FF000A391AF /* ExplodingRing.plist in Resources */,
@@ -993,14 +994,13 @@
 				8FCDC03B168C2FF000A391AF /* SpinningPeas.plist in Resources */,
 				8FCDC03C168C2FF000A391AF /* Spiral.plist in Resources */,
 				8FCDC03D168C2FF000A391AF /* SpookyPeas.plist in Resources */,
+				8FD42CF61833D9E7002D3836 /* grass_sprite.plist in Resources */,
 				8FCDC03E168C2FF000A391AF /* TestPremultipliedAlpha.plist in Resources */,
 				8FCDC03F168C2FF000A391AF /* Upsidedown.plist in Resources */,
 				8FBCFA8516A1E50A0026E5D0 /* cartoon-clouds.png in Resources */,
 				8FBCFA8716A38B2B0026E5D0 /* rain.mp3 in Resources */,
 				8FB659A216A5401200B21198 /* leaf.png in Resources */,
 				724C7A358EB2B9EB0A1D99A1 /* grass.png in Resources */,
-				724C7E758C5CC9600D1E7644 /* grass_sprite.png in Resources */,
-				724C7AA72B6A98011C2DAEFD /* grass_sprite.plist in Resources */,
 				724C7B34081FC38850C32A01 /* stars.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
