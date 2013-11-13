@@ -140,21 +140,7 @@
 		8FCDBFBB168BB4A100A391AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDBFBA168BB4A100A391AF /* main.m */; };
 		8FCDBFBE168BB4A100A391AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDBFBD168BB4A100A391AF /* AppDelegate.m */; };
 		8FCDBFC1168BB4A100A391AF /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDBFC0168BB4A100A391AF /* GameLayer.m */; };
-		8FCDC031168C2FF000A391AF /* BoilingFoam.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC022168C2FF000A391AF /* BoilingFoam.plist */; };
 		8FCDC032168C2FF000A391AF /* BurstPipe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC023168C2FF000A391AF /* BurstPipe.plist */; };
-		8FCDC033168C2FF000A391AF /* Comet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC024168C2FF000A391AF /* Comet.plist */; };
-		8FCDC034168C2FF000A391AF /* debian.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC025168C2FF000A391AF /* debian.plist */; };
-		8FCDC035168C2FF000A391AF /* ExplodingRing.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC026168C2FF000A391AF /* ExplodingRing.plist */; };
-		8FCDC036168C2FF000A391AF /* Flower.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC027168C2FF000A391AF /* Flower.plist */; };
-		8FCDC037168C2FF000A391AF /* Galaxy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC028168C2FF000A391AF /* Galaxy.plist */; };
-		8FCDC038168C2FF000A391AF /* LavaFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC029168C2FF000A391AF /* LavaFlow.plist */; };
-		8FCDC039168C2FF000A391AF /* Phoenix.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC02A168C2FF000A391AF /* Phoenix.plist */; };
-		8FCDC03A168C2FF000A391AF /* SmallSun.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC02B168C2FF000A391AF /* SmallSun.plist */; };
-		8FCDC03B168C2FF000A391AF /* SpinningPeas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC02C168C2FF000A391AF /* SpinningPeas.plist */; };
-		8FCDC03C168C2FF000A391AF /* Spiral.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC02D168C2FF000A391AF /* Spiral.plist */; };
-		8FCDC03D168C2FF000A391AF /* SpookyPeas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC02E168C2FF000A391AF /* SpookyPeas.plist */; };
-		8FCDC03E168C2FF000A391AF /* TestPremultipliedAlpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC02F168C2FF000A391AF /* TestPremultipliedAlpha.plist */; };
-		8FCDC03F168C2FF000A391AF /* Upsidedown.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC030168C2FF000A391AF /* Upsidedown.plist */; };
 		8FD42CF61833D9E7002D3836 /* grass_sprite.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD42CF41833D9E7002D3836 /* grass_sprite.plist */; };
 		8FD42CF71833D9E7002D3836 /* grass_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD42CF51833D9E7002D3836 /* grass_sprite.png */; };
 /* End PBXBuildFile section */
@@ -431,21 +417,7 @@
 		8FCDBFBD168BB4A100A391AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8FCDBFBF168BB4A100A391AF /* GameLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		8FCDBFC0168BB4A100A391AF /* GameLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
-		8FCDC022168C2FF000A391AF /* BoilingFoam.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BoilingFoam.plist; path = BabyTouch/Resources/Particles/BoilingFoam.plist; sourceTree = SOURCE_ROOT; };
 		8FCDC023168C2FF000A391AF /* BurstPipe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BurstPipe.plist; sourceTree = "<group>"; };
-		8FCDC024168C2FF000A391AF /* Comet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Comet.plist; sourceTree = "<group>"; };
-		8FCDC025168C2FF000A391AF /* debian.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = debian.plist; sourceTree = "<group>"; };
-		8FCDC026168C2FF000A391AF /* ExplodingRing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExplodingRing.plist; sourceTree = "<group>"; };
-		8FCDC027168C2FF000A391AF /* Flower.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Flower.plist; sourceTree = "<group>"; };
-		8FCDC028168C2FF000A391AF /* Galaxy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Galaxy.plist; sourceTree = "<group>"; };
-		8FCDC029168C2FF000A391AF /* LavaFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LavaFlow.plist; sourceTree = "<group>"; };
-		8FCDC02A168C2FF000A391AF /* Phoenix.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Phoenix.plist; sourceTree = "<group>"; };
-		8FCDC02B168C2FF000A391AF /* SmallSun.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SmallSun.plist; sourceTree = "<group>"; };
-		8FCDC02C168C2FF000A391AF /* SpinningPeas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SpinningPeas.plist; sourceTree = "<group>"; };
-		8FCDC02D168C2FF000A391AF /* Spiral.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Spiral.plist; sourceTree = "<group>"; };
-		8FCDC02E168C2FF000A391AF /* SpookyPeas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SpookyPeas.plist; sourceTree = "<group>"; };
-		8FCDC02F168C2FF000A391AF /* TestPremultipliedAlpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestPremultipliedAlpha.plist; sourceTree = "<group>"; };
-		8FCDC030168C2FF000A391AF /* Upsidedown.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Upsidedown.plist; sourceTree = "<group>"; };
 		8FD42CF41833D9E7002D3836 /* grass_sprite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = grass_sprite.plist; path = Resources/grass_sprite.plist; sourceTree = "<group>"; };
 		8FD42CF51833D9E7002D3836 /* grass_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grass_sprite.png; path = Resources/grass_sprite.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -897,21 +869,7 @@
 		8FCDC021168C2FF000A391AF /* Particles */ = {
 			isa = PBXGroup;
 			children = (
-				8FCDC022168C2FF000A391AF /* BoilingFoam.plist */,
 				8FCDC023168C2FF000A391AF /* BurstPipe.plist */,
-				8FCDC024168C2FF000A391AF /* Comet.plist */,
-				8FCDC025168C2FF000A391AF /* debian.plist */,
-				8FCDC026168C2FF000A391AF /* ExplodingRing.plist */,
-				8FCDC027168C2FF000A391AF /* Flower.plist */,
-				8FCDC028168C2FF000A391AF /* Galaxy.plist */,
-				8FCDC029168C2FF000A391AF /* LavaFlow.plist */,
-				8FCDC02A168C2FF000A391AF /* Phoenix.plist */,
-				8FCDC02B168C2FF000A391AF /* SmallSun.plist */,
-				8FCDC02C168C2FF000A391AF /* SpinningPeas.plist */,
-				8FCDC02D168C2FF000A391AF /* Spiral.plist */,
-				8FCDC02E168C2FF000A391AF /* SpookyPeas.plist */,
-				8FCDC02F168C2FF000A391AF /* TestPremultipliedAlpha.plist */,
-				8FCDC030168C2FF000A391AF /* Upsidedown.plist */,
 			);
 			name = Particles;
 			path = Resources/Particles;
@@ -980,23 +938,9 @@
 				8FCDBE5B168BB49F00A391AF /* Icon@2x.png in Resources */,
 				8FCDBE5E168BB49F00A391AF /* iTunesArtwork in Resources */,
 				8FCDBF9C168BB4A100A391AF /* ChangeLog in Resources */,
-				8FCDC031168C2FF000A391AF /* BoilingFoam.plist in Resources */,
 				8FCDC032168C2FF000A391AF /* BurstPipe.plist in Resources */,
 				8FD42CF71833D9E7002D3836 /* grass_sprite.png in Resources */,
-				8FCDC033168C2FF000A391AF /* Comet.plist in Resources */,
-				8FCDC034168C2FF000A391AF /* debian.plist in Resources */,
-				8FCDC035168C2FF000A391AF /* ExplodingRing.plist in Resources */,
-				8FCDC036168C2FF000A391AF /* Flower.plist in Resources */,
-				8FCDC037168C2FF000A391AF /* Galaxy.plist in Resources */,
-				8FCDC038168C2FF000A391AF /* LavaFlow.plist in Resources */,
-				8FCDC039168C2FF000A391AF /* Phoenix.plist in Resources */,
-				8FCDC03A168C2FF000A391AF /* SmallSun.plist in Resources */,
-				8FCDC03B168C2FF000A391AF /* SpinningPeas.plist in Resources */,
-				8FCDC03C168C2FF000A391AF /* Spiral.plist in Resources */,
-				8FCDC03D168C2FF000A391AF /* SpookyPeas.plist in Resources */,
 				8FD42CF61833D9E7002D3836 /* grass_sprite.plist in Resources */,
-				8FCDC03E168C2FF000A391AF /* TestPremultipliedAlpha.plist in Resources */,
-				8FCDC03F168C2FF000A391AF /* Upsidedown.plist in Resources */,
 				8FBCFA8516A1E50A0026E5D0 /* cartoon-clouds.png in Resources */,
 				8FBCFA8716A38B2B0026E5D0 /* rain.mp3 in Resources */,
 				8FB659A216A5401200B21198 /* leaf.png in Resources */,
