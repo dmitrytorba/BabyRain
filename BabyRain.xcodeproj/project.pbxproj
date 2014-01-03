@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AF7C4A216B77DF1001F04C9 /* popupLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7C4A116B77DF1001F04C9 /* popupLayer.m */; };
 		724C7A358EB2B9EB0A1D99A1 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 724C742C20BC6D739467B856 /* grass.png */; };
 		724C7B34081FC38850C32A01 /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 724C720082936FB752E47019 /* stars.png */; };
 		8F0BEC681875B9C10085CB40 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0BEC671875B9C10085CB40 /* Default-568h@2x.png */; };
 		8F0BEC6A1875BDA20085CB40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0BEC691875BDA20085CB40 /* Images.xcassets */; };
-		8F5B9A6D16AA87640063C616 /* StartMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B9A6C16AA87640063C616 /* StartMenuLayer.m */; };
 		8F9969BD169BBF9400261222 /* MenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9969BC169BBF9400261222 /* MenuLayer.m */; };
 		8FB659A216A5401200B21198 /* leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB659A116A5401200B21198 /* leaf.png */; };
 		8FBCFA8516A1E50A0026E5D0 /* cartoon-clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBCFA8416A1E50A0026E5D0 /* cartoon-clouds.png */; };
@@ -148,14 +146,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3AF7C4A016B77DF1001F04C9 /* popupLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popupLayer.h; sourceTree = "<group>"; };
-		3AF7C4A116B77DF1001F04C9 /* popupLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popupLayer.m; sourceTree = "<group>"; };
 		724C720082936FB752E47019 /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stars.png; path = Resources/stars.png; sourceTree = "<group>"; };
 		724C742C20BC6D739467B856 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grass.png; path = Resources/grass.png; sourceTree = "<group>"; };
 		8F0BEC671875B9C10085CB40 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "/Users/dmitrytorba/BabyRain/Resources/Default-568h@2x.png"; sourceTree = "<absolute>"; };
 		8F0BEC691875BDA20085CB40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BabyRain/Images.xcassets; sourceTree = "<group>"; };
-		8F5B9A6B16AA87640063C616 /* StartMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartMenuLayer.h; sourceTree = "<group>"; };
-		8F5B9A6C16AA87640063C616 /* StartMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartMenuLayer.m; sourceTree = "<group>"; };
 		8F9969BA169BBED800261222 /* MenuLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuLayer.h; sourceTree = "<group>"; };
 		8F9969BC169BBF9400261222 /* MenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuLayer.m; sourceTree = "<group>"; };
 		8FB659A116A5401200B21198 /* leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leaf.png; path = Resources/leaf.png; sourceTree = "<group>"; };
@@ -449,10 +443,6 @@
 		8FCDBE23168BB49F00A391AF = {
 			isa = PBXGroup;
 			children = (
-				3AF7C4A016B77DF1001F04C9 /* popupLayer.h */,
-				3AF7C4A116B77DF1001F04C9 /* popupLayer.m */,
-				8F5B9A6B16AA87640063C616 /* StartMenuLayer.h */,
-				8F5B9A6C16AA87640063C616 /* StartMenuLayer.m */,
 				8FCDBFBC168BB4A100A391AF /* AppDelegate.h */,
 				8FCDBFBD168BB4A100A391AF /* AppDelegate.m */,
 				8F9969BA169BBED800261222 /* MenuLayer.h */,
@@ -1060,8 +1050,6 @@
 				8FCDBFBE168BB4A100A391AF /* AppDelegate.m in Sources */,
 				8FCDBFC1168BB4A100A391AF /* GameLayer.m in Sources */,
 				8F9969BD169BBF9400261222 /* MenuLayer.m in Sources */,
-				8F5B9A6D16AA87640063C616 /* StartMenuLayer.m in Sources */,
-				3AF7C4A216B77DF1001F04C9 /* popupLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

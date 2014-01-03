@@ -1,9 +1,6 @@
 //
 //  MenuLayer.h
-//  BabyTouch
-//
-//  Created by Dmitry Torba on 12/26/12.
-//
+//  
 
 
 #import <GameKit/GameKit.h>

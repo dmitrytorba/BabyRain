@@ -1,15 +1,10 @@
 //
 //  AppDelegate.m
-//  BabyTouch
-//
-//  Created by Dmitry Torba on 12/26/12.
-//  Copyright __MyCompanyName__ 2012. All rights reserved.
 //
 
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
-#import "StartMenuLayer.h"
 #import "GameLayer.h"
 
 @implementation AppController

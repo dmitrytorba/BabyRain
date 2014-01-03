@@ -1,11 +1,3 @@
-//
-//  GameLayer.m
-//  BabyTouch
-//
-//  Created by Dmitry Torba on 12/26/12.
-//
-
-
 // Import the interfaces
 #import "MenuLayer.h"
 

@@ -1,9 +1,5 @@
 //
 //  GameLayer.m
-//  BabyTouch
-//
-//  Created by Dmitry Torba on 12/26/12.
-//  Copyright __MyCompanyName__ 2012. All rights reserved.
 //
 
 #import "SimpleAudioEngine.h"
@@ -16,7 +12,6 @@
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
-#import "popupLayer.h"
 
 #pragma mark - GameLayer
 
@@ -84,54 +79,6 @@
     [self addChild:bg z:0];
 }
 
-- (void)setupMenuGesture {
-    CCDirector *director = [CCDirector sharedDirector];
-    //Setup up gesture recognizer for menu
-    tapGesture = [[UITapGestureRecognizer alloc]
-                initWithTarget:self
-                        action:@selector(doubleTapCaptured:)];
-
-    tapGesture.numberOfTapsRequired = 2;
-
-    [director.view addGestureRecognizer:tapGesture];
-    [tapGesture release];
-}
-
-- (void)popUpMenu {
-    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"closePopup"]){
-            popupLayer *popup = [popupLayer node];
-            [self addChild:popup z:2];
-        }
-}
-
-//Function to detect doubletap
--(void)doubleTapCaptured:(UITapGestureRecognizer *)gesture
-{
-    CCDirector *director = [CCDirector sharedDirector];
-    CGSize size = [[CCDirector sharedDirector] winSize];
-    
-    CGPoint point = [gesture locationInView:director.view];
-    
-    point = [[CCDirector sharedDirector] convertToGL:point];
-    
-    if (point.x > size.width * 0.80 && point.y > size.height * 0.75) //if double tap is located in top right corner, we go to menu
-    {
-        [self stopSound];
-        CCSprite *bubble = [CCSprite spriteWithFile:@"tap-bubble.png"];
-        bubble.position = point;
-        bubble.scale = 0.3f;
-        [self addChild:bubble];
-        
-        id action1 = [CCScaleTo actionWithDuration:0.7 scale:1.0f];
-        id action2 = [CCFadeOut actionWithDuration:0.2];
-        id actionCallFunc = [CCCallFunc actionWithTarget:self selector:@selector(doMenu)];
-
-        [bubble runAction: [CCSequence actions:action1, action2, actionCallFunc, nil]];
-
-        [director.view removeGestureRecognizer:tapGesture];
-    }
-    
-}
 -(void)onEnterTransitionDidFinish
 {
     [self schedule:@selector(gameLogic:) interval:3.0];
@@ -140,6 +87,7 @@
     [self addGrass];
     [self addLeaf];
 }
+
 -(void)spriteMoveFinished:(id)sender {
     CCSprite *sprite = (CCSprite *)sender;
     [self removeChild:sprite cleanup:YES];
@@ -147,12 +95,11 @@
 
 -(void)gameLogic:(ccTime)dt {
     [self addCloud];
-    //[self animateGrass];
 }
+
 -(void)addLeaf {
     CCSprite *target = [CCSprite spriteWithFile:@"leaf.png"];
     
-    // Determine where to spawn the target along the Y axis
     CGSize winSize = [[CCDirector sharedDirector] winSize];
         
 	CGFloat X = winSize.width - (target.contentSize.width/2);
@@ -166,7 +113,6 @@
 -(void)addGrass {
 
     CGSize winSize = [[CCDirector sharedDirector] winSize];
-
 
     // IMPORTANT:
     // The sprite frames will be cached AND RETAINED, and they won't be released unless you call
@@ -224,13 +170,12 @@
     int actualY = (arc4random() % rangeY) + minY;
     
     
-    // Create the target slightly off-screen along the right edge,
+    // Create the cloud slightly off-screen along the right edge,
     // and along a random position along the Y axis as calculated above
     target.position = ccp(winSize.width + (target.contentSize.width/2), actualY);
-    //target.position = ccp(0, actualY);
     [self addChild:target];
     
-    // Determine speed of the target
+    // Determine speed of the cloud
     int minDuration = 15.0;
     int maxDuration = 25.0;
     int rangeDuration = maxDuration - minDuration;
@@ -245,18 +190,12 @@
     
 }
 
-// on "dealloc" you need to release all your retained objects
 - (void) dealloc
 {
-	// in case you have something to dealloc, do it in this method
-	// in this particular example nothing needs to be released.
-	// cocos2d will automatically release all the children (Label)
-	
 	[self.inactiveEmitters dealloc];
     [self.activeSounds dealloc];
     [self.grassBlocks dealloc];
     [tapGesture dealloc];
-	// don't forget to call "super dealloc"
 	[super dealloc];
 }
 
@@ -298,11 +237,6 @@
     }
 }
 
-
-- (void)doMenu
-{
-	[[CCDirector sharedDirector] pushScene:[CCTransitionFade transitionWithDuration:0.5 scene:[MenuLayer scene] withColor:ccBLACK]];
-}
 - (void)animateGrassAtTouch:(UITouch *)touch
 {
     CGPoint location = [touch locationInView: [touch view]];
@@ -339,6 +273,7 @@
     [self.activeSounds addObject:[NSNumber numberWithInt:sound]];
 }
 
+// TODO: fade out?
 - (void) stopSound
 {
     if([self.activeSounds count] > 0) {
