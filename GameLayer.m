@@ -13,6 +13,8 @@
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
 
+#define TARGET_WIDTH
+
 #pragma mark - GameLayer
 
 // GameLayer implementation
@@ -101,10 +103,19 @@
     CCSprite *target = [CCSprite spriteWithFile:@"leaf.png"];
     
     CGSize winSize = [[CCDirector sharedDirector] winSize];
-        
-	CGFloat X = winSize.width - (target.contentSize.width/2);
-    
-	CGFloat Y = target.contentSize.height/2;
+
+    CGFloat targetWidth = target.contentSize.width;
+    CGFloat targetHeight = target.contentSize.height;
+
+    if (winSize.height < 786) {
+        target.scaleX = 0.75;
+        target.scaleY = 0.75;
+        targetWidth *= 0.75;
+        targetHeight *= 0.75;
+    }
+
+    CGFloat X = winSize.width - (targetWidth/2);
+    CGFloat Y = targetHeight/2;
     
     target.position = ccp(X, Y);
     [self addChild:target];
