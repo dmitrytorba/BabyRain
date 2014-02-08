@@ -108,8 +108,7 @@
     CGFloat targetHeight = target.contentSize.height;
 
     if (winSize.height < 786) {
-        target.scaleX = 0.75;
-        target.scaleY = 0.75;
+        target.scale = 0.75;
         targetWidth *= 0.75;
         targetHeight *= 0.75;
     }
@@ -173,17 +172,23 @@
     
     //Scale clouds
     float cloudSize = (arc4random() % 6) * 0.1 + 0.5;
+    if (winSize.height < 786) {
+        cloudSize *= 0.75;
+    }
     target.scale = cloudSize;
+
+    CGFloat targetHeight = target.contentSize.height * cloudSize;
+    CGFloat targetWidth = target.contentSize.width * cloudSize;
     
-    int minY = target.contentSize.height/2 + winSize.height * 0.75;
-    int maxY = winSize.height - target.contentSize.height/2;
+    int minY = targetHeight/2 + winSize.height * 0.75;
+    int maxY = winSize.height - targetHeight/2;
     int rangeY = maxY - minY;
     int actualY = (arc4random() % rangeY) + minY;
     
     
     // Create the cloud slightly off-screen along the right edge,
     // and along a random position along the Y axis as calculated above
-    target.position = ccp(winSize.width + (target.contentSize.width/2), actualY);
+    target.position = ccp(winSize.width + (targetWidth/2), actualY);
     [self addChild:target];
     
     // Determine speed of the cloud
@@ -194,7 +199,7 @@
     
     // Create the actions
     id actionMove = [CCMoveTo actionWithDuration:actualDuration
-                                        position:ccp(-target.contentSize.width/2, actualY)];
+                                        position:ccp(-targetWidth/2, actualY)];
     id actionMoveDone = [CCCallFuncN actionWithTarget:self
                                              selector:@selector(spriteMoveFinished:)];
     [target runAction:[CCSequence actions:actionMove, actionMoveDone, nil]];
