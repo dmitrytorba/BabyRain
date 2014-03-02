@@ -17,7 +17,7 @@
 @property (readwrite) CFMutableDictionaryRef    activeEmitters;
 @property (readwrite, retain) NSMutableArray    *activeSounds;
 @property (readwrite, retain) NSMutableArray    *grassBlocks;
-@property (readwrite,retain) NSMutableArray     *inactiveEmitters;
+@property (readwrite, retain) NSMutableArray    *inactiveEmitters;
 
 // returns a CCScene that contains the GameLayer as the only child
 +(CCScene *) scene;

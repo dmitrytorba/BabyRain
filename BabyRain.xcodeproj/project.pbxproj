@@ -890,6 +890,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					8FCDBE2D168BB49F00A391AF = {
+						DevelopmentTeam = W3M8756DB7;
+					};
+				};
 			};
 			buildConfigurationList = 8FCDBE28168BB49F00A391AF /* Build configuration list for PBXProject "BabyRain" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -936,6 +941,7 @@
 				8FB659A216A5401200B21198 /* leaf.png in Resources */,
 				724C7A358EB2B9EB0A1D99A1 /* grass.png in Resources */,
 				724C7B34081FC38850C32A01 /* stars.png in Resources */,
+				724C7641C4B256F3864C0365,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,6 +1127,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1132,6 +1140,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = BabyRain;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1142,6 +1151,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
@@ -1152,6 +1163,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = BabyRain;
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

@@ -239,7 +239,7 @@
     for ( UITouch *touch in touches) {
         CCParticleSystem *emitter = [self getEmitterForTouch:touch];
         [emitter stopSystem];
-        [self stopSound];
+        [self fadeOutSound];
         [self recycleEmitter:emitter forTouch:touch];
     }
 }
@@ -248,7 +248,7 @@
     for ( UITouch *touch in touches) {
         CCParticleSystem *emitter = [self getEmitterForTouch:touch];
         [emitter stopSystem];
-        [self stopSound];
+        [self fadeOutSound];
         [self recycleEmitter:emitter forTouch:touch];
     }
 }
@@ -289,13 +289,21 @@
     [self.activeSounds addObject:[NSNumber numberWithInt:sound]];
 }
 
-// TODO: fade out?
-- (void) stopSound
+- (void) fadeOutSound
 {
     if([self.activeSounds count] > 0) {
-        ALuint sound = [[self.activeSounds objectAtIndex:0] intValue];
-        [[SimpleAudioEngine sharedEngine] stopEffect:sound];
-        [self.activeSounds removeObjectAtIndex:0];
+        float currentVolume = [SimpleAudioEngine sharedEngine].effectsVolume;
+        id fadeOut = [CCActionTween actionWithDuration:1 key:@"effectsVolume" from:currentVolume to:0.0f];
+        id stop =
+                [CCCallBlock actionWithBlock:^
+                {
+                    ALuint sound = [[self.activeSounds objectAtIndex:0] intValue];
+                    [[SimpleAudioEngine sharedEngine] stopEffect:sound];
+                    [self.activeSounds removeObjectAtIndex:0];
+                    [SimpleAudioEngine sharedEngine].effectsVolume = 1;
+                }];
+
+        [[[CCDirector sharedDirector] actionManager] addAction:[CCSequence actions:fadeOut, stop, nil] target:[SimpleAudioEngine sharedEngine] paused:NO];
     }
 }
 
