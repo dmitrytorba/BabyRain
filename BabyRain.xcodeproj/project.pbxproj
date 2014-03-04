@@ -941,7 +941,6 @@
 				8FB659A216A5401200B21198 /* leaf.png in Resources */,
 				724C7A358EB2B9EB0A1D99A1 /* grass.png in Resources */,
 				724C7B34081FC38850C32A01 /* stars.png in Resources */,
-				724C7641C4B256F3864C0365,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1135,12 +1134,14 @@
 				GCC_PREFIX_HEADER = Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"libs/kazmath/include\"";
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
 				PRODUCT_NAME = BabyRain;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1158,12 +1159,14 @@
 				GCC_PREFIX_HEADER = Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"libs/kazmath/include\"";
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
 				PRODUCT_NAME = BabyRain;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
