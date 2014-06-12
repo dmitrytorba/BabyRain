@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppStoreFileSize</key>
+	<integer>4324290</integer>
+	<key>AppStoreFileSizeValid</key>
+	<true/>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/BabyRain.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>us.torba.BabyRain</string>
+		<key>CFBundleVersion</key>
+		<string>1.0</string>
+		<key>IconPaths</key>
+		<array>
+			<string>Applications/BabyRain.app/AppIcon29x29@2x.png</string>
+			<string>Applications/BabyRain.app/AppIcon29x29.png</string>
+			<string>Applications/BabyRain.app/AppIcon29x29@2x.png</string>
+			<string>Applications/BabyRain.app/AppIcon57x57@2x.png</string>
+			<string>Applications/BabyRain.app/AppIcon57x57.png</string>
+			<string>Applications/BabyRain.app/AppIcon57x57@2x.png</string>
+		</array>
+		<key>SigningIdentity</key>
+		<string>iPhone Developer: Mitya Torba (GMZ7HH87N2)</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2014-06-12T01:39:48Z</date>
+	<key>Name</key>
+	<string>BabyTouch</string>
+	<key>SchemeName</key>
+	<string>BabyTouch</string>
+</dict>
+</plist>
